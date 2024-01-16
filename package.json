@@ -11,7 +11,6 @@
     "typecheck": "tsc"
   },
   "dependencies": {
-    "@clerk/clerk-sdk-node": "^4.13.6",
     "@clerk/remix": "^4.0.0-alpha-v5.18",
     "@remix-run/css-bundle": "^2.5.0",
     "@remix-run/node": "^2.5.0",
