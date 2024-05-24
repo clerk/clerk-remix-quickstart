@@ -60,6 +60,11 @@ function handleBotRequest(
           const stream = createReadableStreamFromReadable(body);
 
           responseHeaders.set("Content-Type", "text/html");
+          responseHeaders.set("X-XSS-Protection", "1");
+          responseHeaders.set("X-Content-Type-Options", "nosniff");
+          responseHeaders.set("X-Frame-Options", "SAMEORIGIN");
+          responseHeaders.set("Content-Security-Policy", "frame-ancestors 'self'");
+
 
           resolve(
             new Response(stream, {
@@ -110,6 +115,10 @@ function handleBrowserRequest(
           const stream = createReadableStreamFromReadable(body);
 
           responseHeaders.set("Content-Type", "text/html");
+          responseHeaders.set("X-XSS-Protection", "1");
+          responseHeaders.set("X-Content-Type-Options", "nosniff");
+          responseHeaders.set("X-Frame-Options", "SAMEORIGIN");
+          responseHeaders.set("Content-Security-Policy", "frame-ancestors 'self'");
 
           resolve(
             new Response(stream, {
