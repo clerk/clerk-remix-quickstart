@@ -1,6 +1,6 @@
 import { LoaderFunction, redirect } from "@remix-run/node";
 import { createClerkClient } from "@clerk/remix/api.server";
-import { getAuth } from "@clerk/remix/ssr.server";
+import { User, getAuth } from "@clerk/remix/ssr.server";
 import { useLoaderData } from "@remix-run/react";
 
 export const loader: LoaderFunction = async (args) => {
@@ -19,13 +19,13 @@ export const loader: LoaderFunction = async (args) => {
 };
 
 export default function Dashboard() {
-  const { user }: any = useLoaderData();
+  const { user } = useLoaderData<{ user: User }>();
 
   return (
     <div>
-      <h1> Dashboard </h1>
+      <h1>Dashboard</h1>
       <p>
-        Welcome, {user.data.firstName} {user.data.lastName}{" "}
+        Welcome, {user.id}
       </p>
     </div>
   );
