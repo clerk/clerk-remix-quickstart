@@ -16,19 +16,6 @@ This example shows how to use [Clerk](https://www.clerk.com/?utm_source=github&u
 [![documentation](https://img.shields.io/badge/documentation-clerk-green.svg)](https://clerk.com/docs)
 [![twitter](https://img.shields.io/twitter/follow/ClerkDev?style=social)](https://twitter.com/intent/follow?screen_name=ClerkDev)
 
-<details open>
-<summary><h2 style="display: inline-block; margin-left: 4px;">Table of contents</h2></summary>
-
-- [Overview](#overview)
-- [Demo](#demo)
-- [Getting started](#getting-started)
-- [Where the magic happens](#where-the-magic-happens)
-- [Documentation](#documentation)
-- [Deployment](#deployment-vercel)
-- [License info](#license)
-
-</details>
-
 ## Overview
 
 This starter demonstrates how to add authentication to your Remix application with [Clerk](https://www.clerk.com/?utm_source=github&utm_medium=starter_repos&utm_campaign=clerk_remix_v2).
