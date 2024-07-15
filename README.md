@@ -1,18 +1,18 @@
 <p align="center">
-  <a href="https://www.clerk.com/?utm_source=github&utm_medium=starter_repos&utm_campaign=clerk_remix_v2" target="_blank" align="center">
+  <a href="https://clerk.com?utm_source=github&utm_medium=clerk_docs" target="_blank" rel="noopener noreferrer">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./docs/clerk-logo-dark.png">
-      <img src="./docs/clerk-logo-light.png" height="64">
+      <source media="(prefers-color-scheme: dark)" srcset="./public/light-logo.png">
+      <img alt="Clerk Logo for light background" src="./public/dark-logo.png" height="64">
     </picture>
   </a>
   <br />
 </p>
 <div align="center">
   <h1>
-    Clerk and Remix Quickstart
+    Clerk and React Quickstart
   </h1>
-  <a href="https://www.npmjs.com/package/@clerk/clerk-remix">
-    <img alt="Downloads" src="https://img.shields.io/npm/dm/@clerk/clerk-remix" />
+  <a href="https://www.npmjs.com/package/@clerk/clerk-react">
+    <img alt="Downloads" src="https://img.shields.io/npm/dm/@clerk/clerk-react" />
   </a>
   <a href="https://discord.com/invite/b5rXHjAg7A">
     <img alt="Discord" src="https://img.shields.io/discord/856971667393609759?color=7389D8&label&logo=discord&logoColor=ffffff" />
