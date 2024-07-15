@@ -1,28 +1,34 @@
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/remix";
-import type { MetaFunction } from "@remix-run/node";
-
-export const meta: MetaFunction = () => {
-  return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
-  ];
-};
+import {
+  SignOutButton,
+  SignedIn,
+  SignedOut,
+  UserButton,
+  SignInButton,
+  SignUpButton,
+} from "@clerk/remix";
 
 export default function Index() {
   return (
-    <div
-      style={{
-        fontFamily: "system-ui, sans-serif",
-        lineHeight: "1.4",
-        textAlign: "center",
-      }}
-    >
-      <h1>Hello Clerk!</h1>
+    <div>
+      <h1>Index Route</h1>
       <SignedIn>
-        <UserButton />
+        <p>You are signed in!</p>
+        <div>
+          <p>View your profile here</p>
+          <UserButton />
+        </div>
+        <div>
+          <SignOutButton />
+        </div>
       </SignedIn>
       <SignedOut>
-        <SignInButton />
+        <p>You are signed out</p>
+        <div>
+          <SignInButton />
+        </div>
+        <div>
+          <SignUpButton />
+        </div>
       </SignedOut>
     </div>
   );
