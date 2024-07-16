@@ -1,57 +1,98 @@
 <p align="center">
-  <a href="https://www.clerk.com/?utm_source=github&utm_medium=starter_repos&utm_campaign=clerk_remix_v2" target="_blank" align="center">
+  <a href="https://clerk.com?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-remix-quickstart" target="_blank" rel="noopener noreferrer">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./docs/clerk-logo-dark.png">
-      <img src="./docs/clerk-logo-light.png" height="64">
+      <source media="(prefers-color-scheme: dark)" srcset="./public/light-logo.png">
+      <img alt="Clerk Logo for light background" src="./public/dark-logo.png" height="64">
     </picture>
   </a>
   <br />
 </p>
+<div align="center">
+  <h1>
+    Clerk and Remix Quickstart
+  </h1>
+  <a href="https://www.npmjs.com/package/@clerk/clerk-react">
+    <img alt="Downloads" src="https://img.shields.io/npm/dm/@clerk/clerk-react" />
+  </a>
+  <a href="https://discord.com/invite/b5rXHjAg7A">
+    <img alt="Discord" src="https://img.shields.io/discord/856971667393609759?color=7389D8&label&logo=discord&logoColor=ffffff" />
+  </a>
+  <a href="https://twitter.com/clerkdev">
+    <img alt="Twitter" src="https://img.shields.io/twitter/url.svg?label=%40clerkdev&style=social&url=https%3A%2F%2Ftwitter.com%2Fclerkdev" />
+  </a>
+  <br />
+  <br />
+  <img alt="Clerk Hero Image" src="./public/hero.png">
+</div>
 
-# Clerk Remix Starter (v2)
+## Introduction
 
-This example shows how to use [Clerk](https://www.clerk.com/?utm_source=github&utm_medium=starter_repos&utm_campaign=clerk_remix_v2) with [Remix](https://remix.run/).
+Clerk is a developer-first authentication and user management solution. It provides pre-built components and hooks for sign-in, sign-up, user profile, and organization management. Clerk is designed to be easy to use and customize, and can be integrated into any Remix application.
 
-[![chat on Discord](https://img.shields.io/discord/856971667393609759.svg?logo=discord)](https://discord.com/invite/b5rXHjAg7A)
-[![documentation](https://img.shields.io/badge/documentation-clerk-green.svg)](https://clerk.com/docs)
-[![twitter](https://img.shields.io/twitter/follow/ClerkDev?style=social)](https://twitter.com/intent/follow?screen_name=ClerkDev)
+After following the [Clerk Remix quickstart](https://clerk.com/docs/quickstarts/remix?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-remix-quickstart), you will have learned how to:
 
-## Overview
+- Create a new Remix application
+- Install `@clerk/clerk-remix`
+- Set up your environment keys
+- Import the Clerk Publishable Key
+- Wrap your Remix app in `<ClerkProvider />`
+- Use Clerk components to protect your content
+- Embed the `<SignInButton />` and `<SignOutButton />`
+- Deploy your application
 
-This starter demonstrates how to add authentication to your Remix application with [Clerk](https://www.clerk.com/?utm_source=github&utm_medium=starter_repos&utm_campaign=clerk_remix_v2).
+### Branches of this repository
 
-Clerk works with Remix SSR and supports server-side rendering out-of-the-box and follows Remix conventions for loaders and higher-order components (HOCs).
+- `main`: The result of following the [Clerk Remix quickstart](https://clerk.com/docs/quickstarts/remix?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-remix-quickstart).
+- `integrate-remix-router`: The result of following the [Add Remix Router](https://clerk.com/docs/references/remix/add-remix-router#add-remix-router-to-your-clerk-powered-remix-application?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-remix-quickstart) guide.
 
-## Getting started
+## Deploy
 
-To run the starter application locally, you need to:
+Easily deploy the template to Vercel with the button below. You will need to set the required environment variables in the Vercel dashboard.
 
-1. Sign up for a Clerk account at [https://clerk.com](https://www.clerk.com/?utm_source=github&utm_medium=starter_repos&utm_campaign=clerk_remix_v2)
-2. Clone this repo locally
-3. Rename the `.env.sample` to `.env` and then set the required `CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY` variables from the [API keys](https://dashboard.clerk.com/last-active?path=api-keys) screen in your Clerk dashboard.
-4. `npm install` the required dependencies
-5. `npm run dev` to start the development server
-6. Open [http://localhost:3000](http://localhost:3000) and you are ready to go!
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fclerk%2Fclerk-remix-quickstart&env=REMIX_CLERK_PUBLISHABLE_KEY,CLERK_SECRET_KEY&envDescription=Clerk%20API%20keys&envLink=https%3A%2F%2Fclerk.com%2Fdocs%2Fquickstart%2Fremix&redirect-url=https%3A%2F%2Fclerk.com%2Fdocs%2Fquickstart%2Fremix)
+
+## Running the template
+
+```bash
+git clone https://github.com/clerk/clerk-remix-quickstart
+```
+
+To run the example locally, you need to:
+
+1. Sign up for a Clerk account at [https://clerk.com](https://www.clerk.com?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-remix-quickstart).
+
+2. Go to the [Clerk dashboard](https://dashboard.clerk.com) and create an application.
+
+3. Set the required Clerk environment variables as shown in [the example `env` file](./.env.sample).
+
+4. `npm install` the required dependencies.
+
+5. `npm run dev` to launch the development server.
 
 ## Where the magic happens
 
 In Remix, `app/root.tsx` wraps your entire application in both server and browser contexts. Clerk makes two modifications to this file so the authentication state is shared with your Remix routes.
 
-1. `rootAuthLoader` exported as `loader`
-2. The default export wrapped with `ClerkApp`
+1. `rootAuthLoader` exported as `loader`.
+2. The default export wrapped with `ClerkApp`.
 
-For more details, please refer to the [Use Clerk with Remix](https://clerk.com/docs/quickstarts/remix/?utm_source=github&utm_medium=starter_repos&utm_campaign=clerk_remix_v2) guide, or take a look at the [`app/root.tsx`](./app/root.tsx) file.
+For more details, please refer to the [Use Clerk with Remix](https://clerk.com/docs/quickstarts/remix?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-remix-quickstart) guide, or take a look at the [`app/root.tsx`](./app/root.tsx) file.
 
-## Documentation
+## Learn more
 
-To learn more about Clerk and Remix, take a look at the following resources:
+To learn more about Clerk and Remix, check out the following resources:
 
-- [Quick start](https://clerk.com/docs/quickstarts/remix?utm_source=github&utm_medium=starter_repos&utm_campaign=clerk_remix_v2)
-- [Clerk Documentation](https://clerk.com/docs/?utm_source=github&utm_medium=starter_repos&utm_campaign=clerk_remix_v2)
-- [Remix Documentation](https://remix.run/docs)
+- [Quickstart: Get started with Remix and Clerk](https://clerk.com/docs/quickstarts/remix?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-remix-quickstart)
 
-## License
+- [Clerk Documentation](https://clerk.com/docs?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-remix-quickstart)
+- [Remix Documentation](https://remix.run/docs?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-remix-quickstart)
 
-This project is licensed under the **MIT license**.
+## Found an issue or want to leave feedback
 
-See [LICENSE](https://github.com/clerk/clerk-remix-v2/blob/main/LICENSE) for more information.
+Feel free to create a support thread on our [Discord](https://clerk.com/discord). Our support team will be happy to assist you in the `#support` channel.
+
+## Connect with us
+
+You can discuss ideas, ask questions, and meet others from the community in our [Discord](https://discord.com/invite/b5rXHjAg7A).
+
+If you prefer, you can also find support through our [Twitter](https://twitter.com/ClerkDev), or you can [email](mailto:support@clerk.dev) us!
