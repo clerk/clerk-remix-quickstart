@@ -29,7 +29,7 @@
 
 Clerk is a developer-first authentication and user management solution. It provides pre-built components and hooks for sign-in, sign-up, user profile, and organization management. Clerk is designed to be easy to use and customize, and can be integrated into any Remix application.
 
-After following the [Clerk Remix quickstart](https://clerk.com/docs/quickstarts/remix), you will have learned how to:
+After following the [Clerk Remix quickstart](https://clerk.com/docs/quickstarts/remix?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-remix-quickstart), you will have learned how to:
 
 - Create a new Remix application
 - Install `@clerk/clerk-remix`
@@ -42,8 +42,8 @@ After following the [Clerk Remix quickstart](https://clerk.com/docs/quickstarts/
 
 ### Branches of this repository
 
-- `main`: The result of following the [Clerk Remix quickstart](https://clerk.com/docs/quickstarts/remix).
-- `integrate-remix-router`: The result of following the [Add Remix Router](https://clerk.com/docs/references/remix/add-remix-router#add-remix-router-to-your-clerk-powered-remix-application) guide.
+- `main`: The result of following the [Clerk Remix quickstart](https://clerk.com/docs/quickstarts/remix?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-remix-quickstart).
+- `integrate-remix-router`: The result of following the [Add Remix Router](https://clerk.com/docs/references/remix/add-remix-router#add-remix-router-to-your-clerk-powered-remix-application?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-remix-quickstart) guide.
 
 ## Deploy
 
@@ -59,9 +59,9 @@ git clone https://github.com/clerk/clerk-remix-quickstart
 
 To run the example locally, you need to:
 
-1. Sign up for a Clerk account at [https://clerk.com](https://www.clerk.com/?utm_source=github&utm_medium=starter_repos&utm_campaign=clerk_remix_v2).
+1. Sign up for a Clerk account at [https://clerk.com](https://www.clerk.com?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-remix-quickstart).
 
-2. Go to the [Clerk dashboard](https://dashboard.clerk.com?utm_source=github&utm_medium=starter_repos&utm_campaign=clerk_remix_v2) and create an application.
+2. Go to the [Clerk dashboard](https://dashboard.clerk.com) and create an application.
 
 3. Set the required Clerk environment variables as shown in [the example `env` file](./.env.sample).
 
@@ -76,25 +76,18 @@ In Remix, `app/root.tsx` wraps your entire application in both server and browse
 1. `rootAuthLoader` exported as `loader`.
 2. The default export wrapped with `ClerkApp`.
 
-For more details, please refer to the [Use Clerk with Remix](https://clerk.com/docs/quickstarts/remix/?utm_source=github&utm_medium=starter_repos&utm_campaign=clerk_remix_v2) guide, or take a look at the [`app/root.tsx`](./app/root.tsx) file.
+For more details, please refer to the [Use Clerk with Remix](https://clerk.com/docs/quickstarts/remix?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-remix-quickstart) guide, or take a look at the [`app/root.tsx`](./app/root.tsx) file.
 
 ## Learn more
 
 To learn more about Clerk and Remix, check out the following resources:
 
-- [Quickstart: Get started with Remix and Clerk](https://clerk.com/docs/quickstarts/remix?utm_source=github&utm_medium=starter_repos&utm_campaign=clerk_remix_v2)
+- [Quickstart: Get started with Remix and Clerk](https://clerk.com/docs/quickstarts/remix?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-remix-quickstart)
 
-- [Clerk Documentation](https://clerk.com/docs/?utm_source=github&utm_medium=starter_repos&utm_campaign=clerk_remix_v2)
-- [Remix Documentation](https://remix.run/docs)
+- [Clerk Documentation](https://clerk.com/docs?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-remix-quickstart)
+- [Remix Documentation](https://remix.run/docs?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-remix-quickstart)
 
-## Found an issue?
-
-If you have found an issue with the quickstart, please create an [issue](https://github.com/clerk/clerk-remix-quickstart/issues).
-
-If it's a quick fix, such as a misspelled word or a broken link, feel free to skip creating an issue.
-Go ahead and create a [pull request](https://github.com/clerk/clerk-remix-quickstart/pulls) with the solution. :rocket:
-
-## Want to leave feedback?
+## Found an issue or want to leave feedback
 
 Feel free to create an [issue](https://github.com/clerk/clerk-remix-quickstart/issues) with the **feedback** label. Our team will take a look at it and get back to you as soon as we can!
 
