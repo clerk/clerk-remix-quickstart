@@ -89,7 +89,7 @@ To learn more about Clerk and Remix, check out the following resources:
 
 ## Found an issue or want to leave feedback
 
-Feel free to create an [issue](https://github.com/clerk/clerk-remix-quickstart/issues) with the **feedback** label. Our team will take a look at it and get back to you as soon as we can!
+Feel free to create a support thread on our [Discord](https://clerk.com/discord). Our support team will be happy to assist you in the `#support` channel.
 
 ## Connect with us
 
