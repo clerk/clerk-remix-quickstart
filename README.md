@@ -32,18 +32,13 @@ Clerk is a developer-first authentication and user management solution. It provi
 After following the [Clerk Remix quickstart](https://clerk.com/docs/quickstarts/remix?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-remix-quickstart), you will have learned how to:
 
 - Create a new Remix application
-- Install `@clerk/clerk-remix`
+- Install `@clerk/remix`
 - Set up your environment keys
 - Import the Clerk Publishable Key
 - Wrap your Remix app in `<ClerkProvider />`
 - Use Clerk components to protect your content
 - Embed the `<SignInButton />` and `<SignOutButton />`
 - Deploy your application
-
-### Branches of this repository
-
-- `main`: The result of following the [Clerk Remix quickstart](https://clerk.com/docs/quickstarts/remix?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-remix-quickstart).
-- `integrate-remix-router`: The result of following the [Add Remix Router](https://clerk.com/docs/references/remix/add-remix-router#add-remix-router-to-your-clerk-powered-remix-application?utm_source=DevRel&utm_medium=docs&utm_campaign=templates&utm_content=10-24-2023&utm_term=clerk-remix-quickstart) guide.
 
 ## Deploy
 
