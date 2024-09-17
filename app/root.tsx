@@ -1,4 +1,4 @@
-import type { MetaFunction, LoaderFunction } from "@remix-run/node";
+import type { MetaFunction, LoaderFunction } from '@remix-run/node';
 
 import {
   Links,
@@ -6,16 +6,17 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-} from "@remix-run/react";
+} from '@remix-run/react';
 
-import { rootAuthLoader } from "@clerk/remix/ssr.server";
-import { ClerkApp } from "@clerk/remix";
+import { rootAuthLoader } from '@clerk/remix/ssr.server';
+// Import ClerkApp
+import { ClerkApp } from '@clerk/remix';
 
 export const meta: MetaFunction = () => [
   {
-    charset: "utf-8",
-    title: "New Remix App",
-    viewport: "width=device-width,initial-scale=1",
+    charset: 'utf-8',
+    title: 'New Remix App',
+    viewport: 'width=device-width,initial-scale=1',
   },
 ];
 

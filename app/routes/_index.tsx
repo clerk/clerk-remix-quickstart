@@ -1,10 +1,10 @@
 import {
+  SignInButton,
   SignOutButton,
+  SignUpButton,
   SignedIn,
   SignedOut,
   UserButton,
-  SignInButton,
-  SignUpButton,
 } from '@clerk/remix';
 
 export default function Index() {
@@ -13,13 +13,9 @@ export default function Index() {
       <h1>Index Route</h1>
       <SignedIn>
         <p>You are signed in!</p>
-        <div>
-          <p>View your profile here</p>
-          <UserButton />
-        </div>
-        <div>
-          <SignOutButton />
-        </div>
+        <UserButton />
+
+        <SignOutButton />
       </SignedIn>
       <SignedOut>
         <p>You are signed out</p>
