@@ -12,29 +12,29 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@clerk/remix": "^4.2.31",
-    "@remix-run/node": "^2.12.1",
-    "@remix-run/react": "^2.12.1",
-    "@remix-run/serve": "^2.12.1",
-    "isbot": "^5.1.17",
+    "@clerk/remix": "^4.7.5",
+    "@remix-run/node": "^2.16.7",
+    "@remix-run/react": "^2.16.7",
+    "@remix-run/serve": "^2.16.7",
+    "isbot": "^5.1.28",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@eslint/compat": "^1.1.1",
-    "@remix-run/dev": "^2.12.1",
+    "@eslint/compat": "^1.2.9",
+    "@remix-run/dev": "^2.16.7",
     "@types/react": "^18.3.9",
     "@types/react-dom": "^18.3.0",
-    "autoprefixer": "^10.4.20",
-    "eslint": "^9.11.1",
-    "eslint-plugin-react": "^7.36.1",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.27.0",
+    "eslint-plugin-react": "^7.37.5",
     "globals": "^15.9.0",
-    "postcss": "^8.4.47",
+    "postcss": "^8.5.3",
     "tailwindcss": "^3.4.13",
-    "typescript": "^5.6.2",
-    "typescript-eslint": "^8.7.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.1",
     "vite": "^5.4.8",
-    "vite-tsconfig-paths": "^5.0.1"
+    "vite-tsconfig-paths": "^5.1.4"
   },
   "engines": {
     "node": ">=20.0.0"
